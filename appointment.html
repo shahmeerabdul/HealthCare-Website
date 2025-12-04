@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HealthCare</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>HealthCare</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link nav-cta">Patient Portal</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 100px 0 60px;">
+        <div class="hero-content">
+            <h1>Book an Appointment</h1>
+            <p>Schedule your visit with our expert medical professionals</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="patient-name" class="form-label">Your Name *</label>
+                            <input type="text" id="patient-name" name="patient-name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor" class="form-label">Select Doctor *</label>
+                            <select id="doctor" name="doctor" class="form-select" required>
+                                <option value="">Choose a doctor...</option>
+                                <option value="sarah-johnson">Dr. Sarah Johnson - Cardiologist</option>
+                                <option value="michael-chen">Dr. Michael Chen - Neurologist</option>
+                                <option value="emily-rodriguez">Dr. Emily Rodriguez - Pediatrician</option>
+                                <option value="david-kim">Dr. David Kim - General Medicine</option>
+                                <option value="jennifer-brown">Dr. Jennifer Brown - Orthopedics</option>
+                                <option value="robert-taylor">Dr. Robert Taylor - Cardiologist</option>
+                                <option value="amanda-wilson">Dr. Amanda Wilson - Dermatology</option>
+                                <option value="thomas-anderson">Dr. Thomas Anderson - Neurologist</option>
+                                <option value="patricia-martinez">Dr. Patricia Martinez - Pediatrician</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department" class="form-label">Select Department *</label>
+                            <select id="department" name="department" class="form-select" required>
+                                <option value="">Choose a department...</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="general">General Medicine</option>
+                                <option value="orthopedics">Orthopedics</option>
+                                <option value="dermatology">Dermatology</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-2" style="gap: 1rem;">
+                            <div class="form-group">
+                                <label for="appointment-date" class="form-label">Choose Date *</label>
+                                <input type="date" id="appointment-date" name="appointment-date" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appointment-time" class="form-label">Choose Time *</label>
+                                <select id="appointment-time" name="appointment-time" class="form-select" required>
+                                    <option value="">Select time...</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problem-description" class="form-label">Problem Description</label>
+                            <textarea id="problem-description" name="problem-description" class="form-textarea" placeholder="Please describe your symptoms or reason for visit..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HealthCare</h3>
+                <p>Your trusted partner in health and wellness. We are committed to providing exceptional medical care with compassion and excellence.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Book Appointment</a>
+                <a href="blog.html">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="doctors.html?dept=cardiology">Cardiology</a>
+                <a href="doctors.html?dept=neurology">Neurology</a>
+                <a href="doctors.html?dept=pediatrics">Pediatrics</a>
+                <a href="doctors.html?dept=general">General Medicine</a>
+                <a href="emergency.html">Emergency Care</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Dr, City, State 12345</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@healthcare.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HealthCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Set minimum date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('appointment-date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+        });
+    </script>
+</body>
+</html>
+

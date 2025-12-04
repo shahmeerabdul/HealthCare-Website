@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Directory - HealthCare</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>HealthCare</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link nav-cta">Patient Portal</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 100px 0 60px;">
+        <div class="hero-content">
+            <h1>Our Expert Doctors</h1>
+            <p>Find the right specialist for your healthcare needs</p>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="doctor-search" class="search-input" placeholder="Search by name or specialty...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Specialties</button>
+                <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                <button class="filter-btn" data-filter="neurology">Neurology</button>
+                <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                <button class="filter-btn" data-filter="general">General Medicine</button>
+                <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+                <button class="filter-btn" data-filter="dermatology">Dermatology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Sarah+Johnson" alt="Dr. Sarah Johnson" class="doctor-image">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p class="doctor-specialty">Cardiologist</p>
+                    <p class="doctor-experience">MBBS, MD - 15 years experience</p>
+                    <a href="appointment.html?doctor=sarah-johnson" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Michael+Chen" alt="Dr. Michael Chen" class="doctor-image">
+                    <h3>Dr. Michael Chen</h3>
+                    <p class="doctor-specialty">Neurologist</p>
+                    <p class="doctor-experience">MBBS, MD, DM - 12 years experience</p>
+                    <a href="appointment.html?doctor=michael-chen" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Emily+Rodriguez" alt="Dr. Emily Rodriguez" class="doctor-image">
+                    <h3>Dr. Emily Rodriguez</h3>
+                    <p class="doctor-specialty">Pediatrician</p>
+                    <p class="doctor-experience">MBBS, MD - 10 years experience</p>
+                    <a href="appointment.html?doctor=emily-rodriguez" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+David+Kim" alt="Dr. David Kim" class="doctor-image">
+                    <h3>Dr. David Kim</h3>
+                    <p class="doctor-specialty">General Medicine</p>
+                    <p class="doctor-experience">MBBS, MD - 18 years experience</p>
+                    <a href="appointment.html?doctor=david-kim" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Jennifer+Brown" alt="Dr. Jennifer Brown" class="doctor-image">
+                    <h3>Dr. Jennifer Brown</h3>
+                    <p class="doctor-specialty">Orthopedics</p>
+                    <p class="doctor-experience">MBBS, MS - 14 years experience</p>
+                    <a href="appointment.html?doctor=jennifer-brown" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Robert+Taylor" alt="Dr. Robert Taylor" class="doctor-image">
+                    <h3>Dr. Robert Taylor</h3>
+                    <p class="doctor-specialty">Cardiologist</p>
+                    <p class="doctor-experience">MBBS, MD - 20 years experience</p>
+                    <a href="appointment.html?doctor=robert-taylor" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Amanda+Wilson" alt="Dr. Amanda Wilson" class="doctor-image">
+                    <h3>Dr. Amanda Wilson</h3>
+                    <p class="doctor-specialty">Dermatology</p>
+                    <p class="doctor-experience">MBBS, MD - 8 years experience</p>
+                    <a href="appointment.html?doctor=amanda-wilson" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Thomas+Anderson" alt="Dr. Thomas Anderson" class="doctor-image">
+                    <h3>Dr. Thomas Anderson</h3>
+                    <p class="doctor-specialty">Neurologist</p>
+                    <p class="doctor-experience">MBBS, MD, DM - 16 years experience</p>
+                    <a href="appointment.html?doctor=thomas-anderson" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://via.placeholder.com/300x250/1e88e5/ffffff?text=Dr.+Patricia+Martinez" alt="Dr. Patricia Martinez" class="doctor-image">
+                    <h3>Dr. Patricia Martinez</h3>
+                    <p class="doctor-specialty">Pediatrician</p>
+                    <p class="doctor-experience">MBBS, MD - 11 years experience</p>
+                    <a href="appointment.html?doctor=patricia-martinez" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HealthCare</h3>
+                <p>Your trusted partner in health and wellness. We are committed to providing exceptional medical care with compassion and excellence.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Book Appointment</a>
+                <a href="blog.html">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="doctors.html?dept=cardiology">Cardiology</a>
+                <a href="doctors.html?dept=neurology">Neurology</a>
+                <a href="doctors.html?dept=pediatrics">Pediatrics</a>
+                <a href="doctors.html?dept=general">General Medicine</a>
+                <a href="emergency.html">Emergency Care</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Dr, City, State 12345</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@healthcare.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HealthCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+

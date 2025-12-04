@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard - HealthCare</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>HealthCare</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+                <li><a href="appointment.html" class="nav-link">Appointment</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="login.html" class="nav-link nav-cta">Logout</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="hero" style="padding: 80px 0 40px;">
+        <div class="hero-content">
+            <h1>Patient Dashboard</h1>
+            <p>Welcome back! Manage your appointments, reports, and prescriptions</p>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="section">
+        <div class="container">
+            <div class="dashboard-container">
+                <!-- Sidebar -->
+                <aside class="dashboard-sidebar">
+                    <ul class="sidebar-menu">
+                        <li><a href="#appointments" class="active"><i class="fas fa-calendar"></i> Appointments</a></li>
+                        <li><a href="#reports"><i class="fas fa-file-medical"></i> Lab Reports</a></li>
+                        <li><a href="#prescriptions"><i class="fas fa-prescription"></i> Prescriptions</a></li>
+                        <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="dashboard-content">
+                    <!-- Upcoming Appointments -->
+                    <div id="appointments" class="dashboard-section">
+                        <h3><i class="fas fa-calendar-check"></i> Upcoming Appointments</h3>
+                        <div class="appointment-item">
+                            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Dr. Sarah Johnson</h4>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-stethoscope"></i> Cardiology</p>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> December 15, 2024</p>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-clock"></i> 10:00 AM</p>
+                                </div>
+                                <div>
+                                    <span style="background-color: var(--primary-blue); color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); font-size: 0.9rem;">Confirmed</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Dr. Michael Chen</h4>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-brain"></i> Neurology</p>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> December 20, 2024</p>
+                                    <p style="margin: 0.25rem 0; color: var(--text-gray);"><i class="fas fa-clock"></i> 02:00 PM</p>
+                                </div>
+                                <div>
+                                    <span style="background-color: var(--success-green); color: white; padding: 0.5rem 1rem; border-radius: var(--border-radius); font-size: 0.9rem;">Scheduled</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <a href="appointment.html" class="btn btn-primary"><i class="fas fa-plus"></i> Book New Appointment</a>
+                        </div>
+                    </div>
+
+                    <!-- Lab Reports -->
+                    <div id="reports" class="dashboard-section" style="display: none;">
+                        <h3><i class="fas fa-file-medical"></i> Lab Reports</h3>
+                        <div class="report-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Blood Test Report</h4>
+                                    <p style="margin: 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> December 1, 2024</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">X-Ray Report - Chest</h4>
+                                    <p style="margin: 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> November 20, 2024</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="report-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Complete Health Checkup</h4>
+                                    <p style="margin: 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> November 10, 2024</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-download"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prescriptions -->
+                    <div id="prescriptions" class="dashboard-section" style="display: none;">
+                        <h3><i class="fas fa-prescription"></i> Prescriptions</h3>
+                        <div class="prescription-item">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Dr. Sarah Johnson</h4>
+                                    <p style="margin: 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> December 1, 2024</p>
+                                </div>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-download"></i> View</a>
+                            </div>
+                            <div style="background-color: var(--light-gray); padding: 1rem; border-radius: var(--border-radius);">
+                                <p style="margin: 0.5rem 0;"><strong>Medications:</strong></p>
+                                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-gray);">
+                                    <li>Medication A - 1 tablet, twice daily</li>
+                                    <li>Medication B - 1 capsule, once daily</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prescription-item">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                <div>
+                                    <h4 style="margin-bottom: 0.5rem;">Dr. David Kim</h4>
+                                    <p style="margin: 0; color: var(--text-gray);"><i class="fas fa-calendar"></i> November 15, 2024</p>
+                                </div>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-download"></i> View</a>
+                            </div>
+                            <div style="background-color: var(--light-gray); padding: 1rem; border-radius: var(--border-radius);">
+                                <p style="margin: 0.5rem 0;"><strong>Medications:</strong></p>
+                                <ul style="list-style: disc; padding-left: 2rem; color: var(--text-gray);">
+                                    <li>Medication C - 2 tablets, three times daily</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile -->
+                    <div id="profile" class="dashboard-section" style="display: none;">
+                        <h3><i class="fas fa-user"></i> Profile Information</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Full Name</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">John Doe</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Email</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">john.doe@example.com</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Phone</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">(555) 123-4567</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Date of Birth</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">January 15, 1985</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Blood Type</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">O+</p>
+                            </div>
+                            <div>
+                                <p style="color: var(--text-gray); margin-bottom: 0.5rem;">Emergency Contact</p>
+                                <p style="font-weight: 600; margin-bottom: 1rem;">Jane Doe - (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <button class="btn btn-primary"><i class="fas fa-edit"></i> Edit Profile</button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HealthCare</h3>
+                <p>Your trusted partner in health and wellness. We are committed to providing exceptional medical care with compassion and excellence.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Book Appointment</a>
+                <a href="blog.html">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="doctors.html?dept=cardiology">Cardiology</a>
+                <a href="doctors.html?dept=neurology">Neurology</a>
+                <a href="doctors.html?dept=pediatrics">Pediatrics</a>
+                <a href="doctors.html?dept=general">General Medicine</a>
+                <a href="emergency.html">Emergency Care</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Dr, City, State 12345</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@healthcare.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat: 9AM-2PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 HealthCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Dashboard navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarLinks = document.querySelectorAll('.sidebar-menu a');
+            const sections = document.querySelectorAll('.dashboard-section');
+            
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // Update active state
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide sections
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
